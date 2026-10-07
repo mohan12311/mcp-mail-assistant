@@ -1,0 +1,25 @@
+# MCP Mail Assistant - 의존성 패키지
+# Python 3.11+ required
+
+# 기존
+python-dotenv>=1.0.0
+
+# 데이터 모델
+pydantic>=2.11.0,<3.0.0
+
+# LLM (Claude / Anthropic SDK)
+anthropic>=0.40.0
+
+# 첨부파일 파서
+python-docx>=0.8.11      # Word (.docx)
+openpyxl>=3.1.0          # Excel (.xlsx)
+python-pptx>=0.6.21      # PowerPoint (.pptx)
+pdfplumber>=0.9.0        # PDF
+
+# Slack 연동
+slack-sdk>=3.21.0
+slack-bolt>=1.18.0        # Socket Mode 인터랙션
+aiohttp>=3.14.3,<4.0.0    # Async Socket Mode transport
+
+# MCP Server
+mcp>=1.0.0
